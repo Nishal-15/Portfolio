@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="One-Page Corporate Portfolio of Dr. Krishnan Chandrasekharan | Leadership Strategist & Executive Coach.">
+    <title>Dr. Krishnan Chandrasekharan | Leadership Transformation Hub</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Poppins / Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Single-Page Scroll Behavior */
+        html { scroll-behavior: smooth; }
+        section { scroll-margin-top: 80px; }
+        
+        .nav-link.active {
+            color: var(--primary-color) !important;
+            font-weight: 700;
+        }
+        
+        /* Sticky Nav Enhancement */
+        .navbar.scrolled {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 0.8rem 0;
+            background: rgba(255,255,255,0.98);
+        }
+        
+        /* About Section Custom Layout for long text */
+        .about-text-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" class="loading">
+
+    <!-- Loading Spinner -->
+    <div id="loader-wrapper"><div id="loader"></div></div>
+
+    <!-- Navigation Bar (SPA Version) -->
+    <nav class="navbar navbar-expand-lg border-bottom sticky-top bg-white" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold" href="#home">
+                DR. <span class="text-dark">KRISHNAN</span> C.
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center fw-semibold">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#videos">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-primary rounded-pill px-4 btn-sm">LinkedIn <i class="fab fa-linkedin ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header id="home" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <span class="badge-leadership mb-4">FOUNDER & CEO | LEARNING WITHOUT WALLS</span>
+                    <h1 class="hero-title text-dark">Empowering Next-Gen <span class="text-primary">Leadership</span> Excellence.</h1>
+                    <p class="lead text-muted mb-4 fs-4">Dr. Krishnan Chandrasekharan — Globally recognized L&D transformation leader and executive coach with over 25 years of global experience.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#about" class="btn btn-primary btn-lg rounded-pill shadow-lg px-5 py-3">Explore My Story</a>
+                        <a href="#contact" class="btn btn-outline-dark btn-lg rounded-pill px-5 py-3">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="rounded-4 overflow-hidden shadow-lg border-5 border-white border">
+                        <img src="images/profile.jpg" onerror="this.src='https://images.unsplash.com/photo-1560250056-07ba644d8ad3?auto=format&fit=crop&q=80&w=1000'" alt="Dr. Krishnan C." class="img-fluid w-100 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Key Highlights Stats -->
+    <section class="py-5 bg-white border-bottom shadow-sm">
+        <div class="container py-3">
+            <div class="row g-4 text-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="stat-card">
+                        <span class="stat-number fw-bold">25+</span>
+                        <p class="mb-0 text-muted fw-bold">Years of Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <span class="stat-number fw-bold">150K+</span>
+                        <p class="mb-0 text-muted fw-bold">Professionals Trained</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <span class="stat-number fw-bold">Global</span>
+                        <p class="mb-0 text-muted fw-bold">Leadership Presence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Section (FULL CONTENT EXACTLY) -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="card p-3 border rounded-4 shadow-sm bg-white sticky-top" style="top: 100px;">
+                        <img src="images/profile.jpg" onerror="this.src='https://images.unsplash.com/photo-1560250056-07ba644d8ad3?auto=format&fit=crop&q=80&w=1000'" alt="Dr. Krishnan" class="img-fluid rounded-4 mb-4">
+                        <div class="p-3 bg-light rounded-3 text-center mb-4">
+                            <h5 class="fw-bold fs-5 mb-1">Dr. Krishnan Chandrasekharan</h5>
+                            <p class="text-muted small mb-0 font-heading">Executive Coach & Strategist</p>
+                        </div>
+                        <div class="d-flex flex-column gap-3 small border-top pt-3">
+                            <div><h6 class="fw-bold mb-1 small text-primary">Education:</h6><p class="mb-0">Indian Institute of Management, Calcutta</p></div>
+                            <div><h6 class="fw-bold mb-1 small text-primary">Focus:</h6><p class="mb-0">Leadership Development • Behavioral Science • AI Architectures</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <h2 class="section-title fw-bold">Biography</h2>
+                    <div class="about-text-content text-muted mt-4">
+                        <p class="mb-4">Dr. Krishnan Chandrasekharan is a globally recognized Learning & Development (L&D) transformation leader, executive coach, educator, and leadership strategist with over 25 years of experience in human behavior, organizational development, and capability building. He is widely known for his work in helping individuals and organizations build the mindset, communication skills, and leadership capabilities required to thrive in a rapidly changing world.</p>
+
+                        <p class="mb-4">As the Founder & CEO of Learning Without Walls, Dr. Krishnan leads an initiative focused on reimagining learning beyond traditional classrooms. The organization works with students, professionals, and institutions to design learning experiences that are practical, experiential, and directly connected to real-world outcomes. His philosophy emphasizes that learning should not be confined to training programs but should evolve into continuous capability-building systems that drive measurable performance and personal transformation.</p>
+
+                        <p class="mb-4">Throughout his career, Dr. Krishnan has trained and coached more than 150,000 professionals and students globally, ranging from fresh graduates to senior leaders and CXOs across industries. His work spans India, the United Kingdom, the United States, and the EMEA region, giving him deep insight into global leadership challenges and cross-cultural workplace dynamics. Through this exposure, he has developed a unique perspective on leadership, emphasizing clarity of thought, ethical decision-making, and the ability to lead diverse and multi-generational teams.</p>
+
+                        <p class="mb-4">Dr. Krishnan’s expertise includes leadership development, communication and public speaking, emotional intelligence, organizational capability building, and employability skills training. His programs are known for combining structured frameworks with highly interactive learning methods such as group discussions, real-world simulations, public speaking exercises, and reflective coaching practices. This approach helps learners move beyond theoretical knowledge and develop the confidence and practical skills needed for real-life professional environments.</p>
+
+                        <p class="mb-4">A strong advocate of the future of work, Dr. Krishnan also explores how emerging technologies such as Artificial Intelligence can enhance learning and leadership development. He believes AI can support learning diagnostics, identify skill gaps, and personalize development journeys, while human mentors and coaches guide deeper behavioral transformation.</p>
+
+                        <p class="mb-4">Beyond corporate consulting and institutional training, Dr. Krishnan actively contributes to the global learning ecosystem through thought leadership, executive coaching, mentoring programs, and trainer development initiatives. He is passionate about empowering educators, trainers, and young professionals to create meaningful impact through knowledge, communication, and ethical leadership.</p>
+
+                        <p>Known for his energetic training style, practical insights, and student-centric approach, Dr. Krishnan continues to inspire learners and professionals to think independently, communicate effectively, and lead with purpose—turning learning into a lifelong journey of growth and contribution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Photo Gallery Section (STRICT MEDIA USAGE) -->
+    <section id="gallery" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="section-title fw-bold mb-5 text-center d-block mx-auto" style="width: fit-content;">Photo Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="https://images.unsplash.com/photo-1552664730-d307ca884978"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" class="img-fluid gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div></div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="https://images.unsplash.com/photo-1573164713988-8665fc963095"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800" class="img-fluid gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div></div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="https://images.unsplash.com/photo-1556761175-4b46a572b786"><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800" class="img-fluid gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div></div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800" class="img-fluid gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div></div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="https://images.unsplash.com/photo-1505373877841-8d25f7d46678"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800" class="img-fluid gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div></div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500"><div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-img="https://images.unsplash.com/photo-1515169067868-5387ec356754"><img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800" class="img-fluid gallery-img"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Video Gallery Section (STRICT MEDIA USAGE) -->
+    <section id="videos" class="section-padding bg-light-blue">
+        <div class="container">
+            <h2 class="section-title fw-bold mb-5 text-center d-block mx-auto" style="width: fit-content;">Masterclasses & Keynotes</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="video-container shadow-sm"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/fW8amMCVAJQ" allowfullscreen></iframe></div></div><h5 class="mt-3 fw-bold ps-2">The Golden Circle of Leadership</h5></div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="video-container shadow-sm"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/OiaSTVlY2pA" allowfullscreen></iframe></div></div><h5 class="mt-3 fw-bold ps-2">The Power of Executive Coaching</h5></div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="video-container shadow-sm"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/PCYbeit2sZk" allowfullscreen></iframe></div></div><h5 class="mt-3 fw-bold ps-2">Behavioral Transformation</h5></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Blog Section (FIX: FULLY POPULATED) -->
+    <section id="blog" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="section-title fw-bold mb-5">Leadership Insights</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="blog-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=800" class="card-img-top" alt="Blog 1">
+                        <div class="card-body p-4">
+                            <h6 class="text-primary fw-bold text-uppercase mb-2">Psychology</h6>
+                            <h5 class="fw-bold fs-5">Building the Collective Mindset</h5>
+                            <p class="text-muted small">Developing cognitive resilience in high-pressure environments.</p>
+                            <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-link px-0 fw-bold text-decoration-none text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" class="card-img-top" alt="Blog 2">
+                        <div class="card-body p-4">
+                            <h6 class="text-primary fw-bold text-uppercase mb-2">Technology</h6>
+                            <h5 class="fw-bold fs-5">Leveraging AI in Learning</h5>
+                            <p class="text-muted small">Personalizing employee growth with AI-driven analytics.</p>
+                            <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-link px-0 fw-bold text-decoration-none text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" class="card-img-top" alt="Blog 3">
+                        <div class="card-body p-4">
+                            <h6 class="text-primary fw-bold text-uppercase mb-2">Strategy</h6>
+                            <h5 class="fw-bold fs-5">The Hybrid Leadership Compass</h5>
+                            <p class="text-muted small">Leading diverse teams in the age of borderless work.</p>
+                            <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-link px-0 fw-bold text-decoration-none text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5"><button class="btn btn-outline-primary btn-lg rounded-pill px-5 py-3">View All Insights on LinkedIn</button></div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section (FIX: INTEGRATED) -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title fw-bold mb-5 text-center mx-auto d-block" style="width: fit-content;">Connect & Transform</h2>
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info-card shadow-lg p-5">
+                        <h4 class="fw-bold mb-4">Dr. Krishnan Chandrasekharan</h4>
+                        <p class="mb-4"><i class="fas fa-map-marker-alt me-3 text-white"></i> Hyderabad, Telangana, India</p>
+                        <p class="mb-5"><i class="fas fa-envelope me-3 text-white"></i> hello@learningwithoutwalls.in</p>
+                        <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-light rounded-pill px-4 fw-bold text-primary w-100 py-3"><i class="fab fa-linkedin me-2"></i> Professional Enquiries</a>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="card p-5 border-0 shadow-sm rounded-4 h-100">
+                        <form id="contactForm" novalidate>
+                            <div class="row g-4">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required></div>
+                                <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address" required></div>
+                                <div class="col-12"><textarea class="form-control" rows="5" placeholder="How can we help your leadership journey?" required></textarea></div>
+                                <div class="col-12"><button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 fw-bold">Send Message</button></div>
+                            </div>
+                        </form>
+                        <div id="formMessage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal for Zoom View -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 bg-transparent text-end">
+                <button type="button" class="btn-close btn-close-white ms-auto mb-2" data-bs-dismiss="modal"></button>
+                <img src="" id="modalImg" class="img-fluid rounded-4 shadow-lg w-100">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5"><div class="container text-center"><p class="small opacity-50 mb-0">&copy; 2026 Dr. Krishnan Chandrasekharan. All Rights Reserved.</p></div></footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Modal image logic
+        const imageModal = document.getElementById('imageModal');
+        imageModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const imgSrc = button.getAttribute('data-bs-img');
+            const modalImg = imageModal.querySelector('#modalImg');
+            modalImg.src = imgSrc;
+        });
+    </script>
+</body>
+</html>
