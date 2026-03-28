@@ -15,8 +15,11 @@
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-* {
-    box-sizing: border-box;
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -118,10 +121,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {
-    padding: 0 0 50px; /* Zero top padding to pull content to the max top */
+    padding: 0 0 70px; /* Minimal top padding */
     background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
     position: relative;
-    display: block; 
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero-title {
@@ -348,7 +352,7 @@ footer a:hover {
 /* Smartphones (Landscape & Portrait) */
 @media (max-width: 767.98px) {
     .navbar { padding: 0.6rem 0 !important; }
-    .hero { padding: 40px 0 30px !important; } /* The critical top gap fix */
+    .hero { padding: 0 0 30px !important; } /* The critical top gap fix */
     .section-title { font-size: 1.85rem; }
     .hero-title { font-size: 1.9rem; line-height: 1.25; }
     .nav-link { font-size: 1.15rem; padding: 0.8rem 0 !important; }
