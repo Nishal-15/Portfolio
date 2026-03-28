@@ -1,292 +1,160 @@
 /* 
-    Dr. Krishnan Chandrasekharan Portfolio - Production-Ready Responsive CSS
-    Tech Stack: HTML5, CSS3, Bootstrap 5, Vanilla JS
+    STRICT RESPONSIVE FOUNDATION - Dr. Krishnan Chandrasekharan Portfolio
+    Optimized for Zero Horizontal Overflow & Mobile-First Excellence
 */
-
-/* 1. Global Production Resets */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
 
 :root {
     --primary-color: #0d6efd;
-    --primary-dark: #0056b3;
-    --secondary-color: #ffffff;
-    --text-dark: #1f2937;
-    --text-muted: #6b7280;
-    --bg-light: #f8f9fa;
-    --bg-dark: #111827;
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
-    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --primary-dark: #004dc7;
+    --bg-light: #f8fbff;
+    --glass-white: rgba(255, 255, 255, 0.95);
+    --text-dark: #1a1a1b;
+    --text-muted: #6c757d;
+    --transition-standard: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 1. Global Reset & Overflow Lockdown */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important; /* Total removal of horizontal scroll */
-    margin: 0 !important;
-    padding: 0 !important;
-    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    width: 100vw;
+    width: 100%;
     position: relative;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-body);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
     color: var(--text-dark);
-    line-height: 1.8;
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
-img {
+img, video, iframe, canvas {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* 2. Layout Elements */
-.section-padding {
-    padding: 6.25rem 0; /* 100px mapped to 6.25rem */
+/* 2. Responsive Containment */
+.container {
     width: 100%;
-    overflow-x: hidden !important; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.bg-light-blue { background-color: #f8fbff; }
-
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+section, header {
     position: relative;
-    display: inline-block;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -0.75rem;
-    left: 0;
-    width: 3.75rem;
-    height: 0.25rem;
-    background: var(--primary-color);
-    border-radius: 0.125rem;
-}
-
-.text-center .section-title::after {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* 3. Navigation */
-.navbar {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(0.625rem);
-    border-bottom: 0.0625rem solid rgba(0,0,0,0.05);
-    padding: 0.75rem 0;
     width: 100%;
-    z-index: 1030;
-    transition: var(--transition);
+    overflow: hidden !important; /* Total lockdown on child overflow */
 }
 
-.navbar-brand {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--primary-color) !important;
+/* 3. Navigation (Sticky & Fixed Ready) */
+.navbar {
+    background: var(--glass-white);
+    backdrop-filter: blur(10px);
+    transition: var(--transition-standard);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .nav-link {
     font-weight: 600;
     color: var(--text-dark) !important;
-    font-size: 0.9rem;
-    padding: 0.5rem 1.25rem !important;
-    position: relative;
-    transition: 0.3s;
+    padding: 0.5rem 1rem !important;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 1.25rem;
-    right: 1.25rem;
-    height: 0.1875rem;
-    background: var(--primary-color);
-    transform: scaleX(0);
-    transition: 0.3s;
+.nav-link.active {
+    color: var(--primary-color) !important;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
-    transform: scaleX(1);
-}
-
-/* 4. Hero Section */
+/* 4. Hero Section (Strict Response) */
 .hero {
-    padding: 1.25rem 0 4.375rem; /* Compact top alignment */
+    min-height: 80vh;
+    padding: 100px 0 60px;
     background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
-    width: 100%;
-    overflow: hidden !important;
-    position: relative;
 }
 
 .hero-title {
-    font-size: clamp(2rem, 5vw, 3.8rem);
-    line-height: 1.2;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1.15;
     margin-bottom: 1.5rem;
 }
 
 .badge-leadership {
     background-color: rgba(13, 110, 253, 0.1);
     color: var(--primary-color);
-    font-weight: 700;
-    padding: 0.625rem 1.25rem;
-    border-radius: 3.125rem;
+    padding: 10px 20px;
+    border-radius: 50px;
     display: inline-block;
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.03em;
 }
 
-.hero-img-container {
-    width: 100%;
-}
-
-.hero-img {
-    aspect-ratio: auto;
-    width: 100%;
-    max-width: 31.25rem;
-    margin: 0 auto;
-}
-
-/* 5. Components */
+/* 5. Components (Grid & Flex) */
 .stat-card {
     background: #fff;
-    padding: 2.5rem;
-    border-radius: 1.5rem;
+    padding: 2rem;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 0.625rem 2.5rem rgba(0,0,0,0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     height: 100%;
-    transition: var(--transition);
+    transition: var(--transition-standard);
 }
 
-.stat-card:hover { transform: translateY(-0.625rem); }
-
-.stat-number {
-    font-size: 3rem;
-    color: var(--primary-color);
-    display: block;
-    margin-bottom: 0.5rem;
-}
+.stat-card:hover { transform: translateY(-5px); }
+.stat-number { font-size: 2.8rem; color: var(--primary-color); display: block; }
 
 .video-card {
-    border-radius: 1.25rem;
+    border-radius: 20px;
     overflow: hidden;
     background: #fff;
-    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.05);
-    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.video-card:hover { transform: translateY(-0.5rem); }
-
-.blog-card {
-    border-radius: 1.25rem;
-    overflow: hidden;
-    height: 100%;
-    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.04);
-    transition: var(--transition);
-}
-
-.blog-card:hover { transform: translateY(-0.625rem); }
-
-.gallery-img {
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    border-radius: 1rem;
+.video-card iframe {
     width: 100%;
-    transition: 0.5s;
+    aspect-ratio: 16/9;
 }
 
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem;
-    width: 100%;
-}
-
-.gallery-item:hover .gallery-img { transform: scale(1.08); }
-
-/* 6. Contact & Footer */
-.contact-info-card {
-    background: var(--primary-color);
-    color: #fff;
-    padding: 3rem;
-    border-radius: 1.5rem;
-}
-
-.form-control {
-    padding: 1rem 1.25rem;
-    border-radius: 0.75rem;
-    border: 0.0625rem solid #e5e7eb;
-}
-
-footer {
-    background-color: var(--bg-dark);
-    color: #fff;
-    padding: 5rem 0 2.5rem;
-    width: 100%;
-}
-
-/* 7. Elite Mobile Responsiveness (Pure Production Grade) */
+/* 6. Media Queries (Strict Breakpoints) */
 @media (max-width: 991.98px) {
-    .section-padding { padding: 4rem 0; }
-    .hero { 
-        padding-top: 6.25rem !important; 
-        text-align: center; 
-    }
-    .hero-title { font-size: 2.25rem; }
-    .hero-img-container { margin-top: 2.5rem; }
-    .hero .d-flex { justify-content: center; }
+    .section-padding { padding: 80px 0; }
+    .hero { text-align: center; padding-top: 120px; }
+    .hero-img { margin-top: 3rem; }
 }
 
 @media (max-width: 767.98px) {
-    .section-title { font-size: 1.8rem; }
-    .section-padding { padding: 3.75rem 0; }
-    
-    .hero { padding-left: 1rem; padding-right: 1rem; }
-    .hero-title { font-size: 1.9rem; }
-    
-    .badge-leadership { 
-        font-size: 0.75rem; 
-        padding: 0.5rem 1.25rem;
-        width: 100%;
-        text-align: center;
-    }
-
-    #about .sticky-top {
-        position: relative !important;
-        top: 0 !important;
-        margin-bottom: 2.5rem;
-    }
-
-    .stat-card { padding: 1.5rem; }
-    .stat-number { font-size: 2.5rem; }
-    
-    .btn-lg {
-        width: 100%;
-        display: block;
-        margin-bottom: 0.75rem;
-    }
-    
-    .container {
-        padding-left: 1.25rem !important;
-        padding-right: 1.25rem !important;
-    }
+    .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .hero-title { font-size: 1.85rem; }
+    .stat-number { font-size: 2.2rem; }
+    .section-title { font-size: 1.7rem; }
 }
 
 @media (max-width: 575.98px) {
-    .hero-title { font-size: 1.7rem; }
-    .section-title { font-size: 1.6rem; }
+    .hero { padding-top: 100px; }
+    .hero-title { font-size: 1.6rem; }
+    .btn-lg { width: 100%; padding: 15px; }
+}
+
+/* AOS Safety - Disable horizontal transitions on small mobile if needed */
+@media (max-width: 480px) {
+    [data-aos^="fade-"][data-aos^="fade-"] {
+        opacity: 0;
+        transition-property: opacity, transform;
+    }
+    [data-aos^="fade-"].aos-animate {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
