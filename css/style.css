@@ -16,10 +16,13 @@
 }
 
 html, body {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    -webkit-overflow-scrolling: touch; /* Smooth iOS scroll */
 }
 
 body {
@@ -124,8 +127,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 0 70px; /* Minimal top padding */
     background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
     position: relative;
-    width: 100%;
-    overflow: hidden;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 .hero-title {
@@ -169,8 +173,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* General Sections */
-.section-padding { padding: 100px 0; }
-.bg-light-blue { background-color: #f8fbff; }
+.section-padding { padding: 100px 0; overflow-x: hidden !important; }
+.bg-light-blue { background-color: #f8fbff; overflow-x: hidden !important; }
 
 .section-title {
     font-size: 2.5rem;
