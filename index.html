@@ -3,239 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="One-Page Corporate Portfolio of Dr. Krishnan Chandrasekharan | Leadership Strategist & Executive Coach.">
-    <title>Dr. Krishnan Chandrasekharan | Leadership Transformation Hub</title>
+    <meta name="description" content="Redefining Leadership Transformation with Dr. Krishnan Chandrasekharan | Founder of Learning Without Walls.">
+    <title>Dr. Krishnan Chandrasekharan | Premium Leadership Transformation</title>
 
     <!-- UI Core -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Custom Style Hub -->
+    <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" class="loading">
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
 
-    <!-- Preloader -->
-    <div id="loader-wrapper"><div id="loader"></div></div>
-
-    <!-- Navigation Hub (Fixed & Responsive) -->
-    <nav class="navbar navbar-expand-lg border-bottom fixed-top bg-white" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand text-primary fw-bold" href="#home">
-                DR. <span class="text-dark">KRISHNAN</span> C.
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-apple fixed-top" id="mainNav">
+        <div class="container apple-container">
+            <a class="navbar-brand fw-bold text-dark" href="#home" style="font-family: 'Outfit';">
+                DR. KRISHNAN <span style="font-weight: 500; opacity: 0.8;">CHANDRASEKHARAN</span>
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center fw-semibold">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#problem">The Problem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Transformation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-                <div class="ms-lg-3 mt-3 mt-lg-0 d-grid d-lg-block">
-                    <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-primary rounded-pill px-4 btn-sm shadow-sm">LinkedIn <i class="fab fa-linkedin ms-1"></i></a>
-                </div>
             </div>
         </div>
     </nav>
 
-    <!-- 1. Hero Dynamic Entrance -->
-    <header id="home" class="hero d-flex flex-column justify-content-center">
-        <div class="container">
-            <div class="row align-items-center g-0 overflow-hidden">
-                <div class="col-lg-7 text-lg-start text-center" data-aos="fade-right">
-                    <div class="badge-leadership mb-4 shadow-sm border">FOUNDER & CEO | LEARNING WITHOUT WALLS</div>
-                    <h1 class="hero-title text-dark">Empowering Next-Gen <span class="text-primary">Leadership</span> Excellence.</h1>
-                    <p class="lead text-muted mb-5">Globally recognized L&D transformation leader and executive coach with over 25 years of global impact.</p>
-                    <div class="d-flex flex-column flex-sm-row justify-content-lg-start justify-content-center gap-3">
-                        <a href="#about" class="btn btn-primary btn-lg rounded-pill shadow px-5 py-3">Explore My Story</a>
-                        <a href="#contact" class="btn btn-outline-dark btn-lg rounded-pill px-5 py-3">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-left">
-                    <div class="rounded-4 overflow-hidden shadow-lg border-5 border-white border ms-lg-4">
-                        <img src="images/profile.jpg" onerror="this.src='https://images.unsplash.com/photo-1560250056-07ba644d8ad3?auto=format&fit=crop&q=80&w=1000'" alt="Dr. Krishnan C." class="img-fluid w-100">
-                    </div>
+    <!-- 1. HERO SECTION (FULL SCREEN) -->
+    <header id="home" class="hero">
+        <div class="container apple-container">
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <span class="hero-tagline" data-aos="fade-up" data-aos-delay="200">Global Leadership Strategist</span>
+                <h1 class="hero-title">Learning was never meant to be <span class="text-primary-blue">confined.</span></h1>
+                <p class="hero-subtext">Dr. Krishnan Chandrasekharan reimagines leadership beyond classrooms, turning theoretical knowledge into measurable behavioral ownership.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-4 mt-5">
+                    <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn-apple">Work With Dr. Krishnan</a>
+                    <a href="#about" class="btn-apple-outline text-white border-white">Explore My Story</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Quick Stats Grid -->
-    <section class="py-5 bg-white border-bottom position-relative overflow-hidden">
-        <div class="container py-4">
-            <div class="row g-4 text-center">
-                <div class="col-sm-4" data-aos="fade-up">
-                    <div class="stat-card">
-                        <span class="stat-number fw-bold">25+</span>
-                        <p class="mb-0 text-muted fw-bold small text-uppercase">Years of Experience</p>
-                    </div>
-                </div>
-                <div class="col-sm-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-card">
-                        <span class="stat-number fw-bold">150K+</span>
-                        <p class="mb-0 text-muted fw-bold small text-uppercase">Professionals Trained</p>
-                    </div>
-                </div>
-                <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-card border-0">
-                        <span class="stat-number fw-bold">Global</span>
-                        <p class="mb-0 text-muted fw-bold small text-uppercase">Presence</p>
-                    </div>
-                </div>
+    <!-- 2. PROBLEM SECTION -->
+    <section id="problem" class="section-padding bg-grey">
+        <div class="container apple-container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <p class="text-primary-blue fw-700 tracking-widest small text-uppercase mb-3">The Awareness</p>
+                <h2 class="display-4 fw-bold text-dark mb-4">The Problem No One <br>Talks About.</h2>
+            </div>
+            <div class="problem-text text-center mt-5 py-5">
+                <div class="problem-line mb-4" data-aos="fade-up">Training happens.</div>
+                <div class="problem-line mb-4" data-aos="fade-up" data-aos-delay="200">People attend.</div>
+                <div class="problem-line" data-aos="fade-up" data-aos-delay="400">Nothing changes.</div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="600">
+                <p class="lead text-muted mx-auto" style="max-width: 600px;">Most leadership programs focus on information. We focus on transformation.</p>
             </div>
         </div>
     </section>
 
-    <!-- 2. Biography Hub -->
-    <section id="about" class="py-5 bg-light overflow-hidden">
-        <div class="container py-lg-5">
-            <div class="row g-lg-5 g-4 align-items-start">
-                <div class="col-lg-4 order-lg-1 order-1">
-                    <div class="card p-3 border-0 rounded-4 shadow-sm bg-white" data-aos="fade-up">
-                        <img src="images/profile.jpg" onerror="this.src='https://images.unsplash.com/photo-1560250056-07ba644d8ad3?auto=format&fit=crop&q=80&w=1000'" alt="Dr. Krishnan" class="img-fluid rounded-4 mb-4 shadow-sm">
-                        <div class="p-3 bg-light rounded-3 text-center mb-3">
-                            <h5 class="fw-bold mb-1">Dr. Krishnan C.</h5>
-                            <p class="text-muted small mb-0">Executive Coach & Strategist</p>
-                        </div>
-                        <div class="d-flex flex-column gap-3 small border-top pt-3 opacity-75">
-                            <div><strong class="text-primary">Alumnus:</strong><br>IIM Calcutta</div>
-                            <div><strong class="text-primary">Focus:</strong><br>Leadership • Behavior • AI</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 order-lg-2 order-2" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="mb-5 section-title">About Me</h2>
-                    <div class="text-muted fs-5 lh-lg">
-                        <p class="mb-4">Dr. Krishnan Chandrasekharan is a globally recognized Learning & Development (L&D) transformation leader, executive coach, educator, and leadership strategist with over 25 years of experience in human behavior and capability building.</p>
-                        <p class="mb-4">As the Founder & CEO of Learning Without Walls, Dr. Krishnan leads an initiative focused on reimagining learning beyond traditional classrooms, focusing on continuous capability-building systems that drive measurable performance.</p>
-                        <p class="mb-4">Throughout his career, he has trained more than 150,000 professionals globally, ranging from fresh graduates to senior CXOs across India, the UK, the US, and EMEA regions.</p>
-                        <p class="mb-4">His expertise includes leadership development, communication, emotional intelligence, and organizational capability building, using highly interactive simulations and reflective coaching practices.</p>
-                        <p class="mb-4">A strong advocate of the future of work, Dr. Krishnan explores how technologies like Artificial Intelligence can harmonize with human mentors to guide behavioral transformation.</p>
-                        <p>Beyond consulting, he is passionate about empowering educators and young professionals to create meaningful impact through knowledge and ethical leadership.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Photo & Video Showcase Grid -->
-    <section id="gallery" class="py-5 bg-white overflow-hidden">
-        <div class="container py-lg-5 text-center">
-            <h2 class="section-title mb-5">Visual Portfolio</h2>
-            <div class="row g-3">
-                <div class="col-md-4 col-6" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" class="img-fluid rounded-3 shadow-sm border" alt="Keynote 1"></div>
-                <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800" class="img-fluid rounded-3 shadow-sm border" alt="Training 2"></div>
-                <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800" class="img-fluid rounded-3 shadow-sm border" alt="Workshop 3"></div>
-                <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800" class="img-fluid rounded-3 shadow-sm border" alt="Speech 4"></div>
-                <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800" class="img-fluid rounded-3 shadow-sm border" alt="Seminar 5"></div>
-                <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500"><img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800" class="img-fluid rounded-3 shadow-sm border" alt="Summit 6"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="videos" class="py-5 bg-light overflow-hidden">
-        <div class="container py-lg-5">
-            <h2 class="section-title mb-5 text-center">Masterclasses</h2>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="video-card"><iframe src="https://www.youtube.com/embed/5MgBikgcWnY" title="Leadership Transformation" allowfullscreen loading="lazy"></iframe></div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="video-card"><iframe src="https://www.youtube.com/embed/2Vv-BfVoq4g" title="AI Revolution" allowfullscreen loading="lazy"></iframe></div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="video-card"><iframe src="https://www.youtube.com/embed/tAGnKpE4NCI" title="Behavioral Science" allowfullscreen loading="lazy"></iframe></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Insights Hub (Blog) -->
-    <section id="blog" class="py-5 bg-white overflow-hidden">
-        <div class="container py-lg-5">
-            <h2 class="section-title mb-5">Leadership Insights</h2>
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=800" class="card-img-top" alt="Psychology Insight" style="height: 200px; object-fit: cover;">
-                        <div class="card-body p-4 text-center">
-                            <h5 class="fw-bold fs-5">Collective Mindset</h5>
-                            <p class="text-muted small">Developing cognitive resilience in leadership.</p>
-                            <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill mt-3">Read Insight</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" class="card-img-top" alt="AI Insight" style="height: 200px; object-fit: cover;">
-                        <div class="card-body p-4 text-center">
-                            <h5 class="fw-bold fs-5">Leveraging AI</h5>
-                            <p class="text-muted small">Personalizing employee growth with AI Analytics.</p>
-                            <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill mt-3">Read Insight</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" class="card-img-top" alt="Strategy Insight" style="height: 200px; object-fit: cover;">
-                        <div class="card-body p-4 text-center">
-                            <h5 class="fw-bold fs-5">Hybrid Teams</h5>
-                            <p class="text-muted small">Leading diverse teams in a borderless world.</p>
-                            <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-outline-primary btn-sm rounded-pill mt-3">Read Insight</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn btn-primary rounded-pill px-5 shadow">More on LinkedIn</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. Final Connection -->
-    <section id="contact" class="py-5 bg-dark text-white overflow-hidden">
-        <div class="container py-lg-5">
-            <div class="row g-5 align-items-center">
+    <!-- 3. TRANSFORMATION SECTION -->
+    <section id="about" class="section-padding overflow-hidden">
+        <div class="container apple-container">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <h2 class="display-5 fw-bold mb-4">Ready to <span class="text-primary">Transform</span>?</h2>
-                    <p class="lead opacity-75 mb-5">Connect with Dr. Krishnan for executive coaching or leadership advisory.</p>
-                    <div class="d-flex flex-column gap-3 fs-5">
-                        <div class="d-flex align-items-center gap-3"><i class="fas fa-location-dot text-primary"></i> Hyderabad, India</div>
-                        <div class="d-flex align-items-center gap-3"><i class="fas fa-envelope text-primary"></i> hello@learningwithoutwalls.in</div>
+                    <p class="text-primary-blue fw-700 small text-uppercase mb-3">The Action</p>
+                    <h2 class="display-3 fw-bold mb-4">From Knowledge <br>to Ownership.</h2>
+                    <p class="fs-4 text-muted mb-5">Dr. Krishnan bridges the gap between potential and execution, creating leaders who don't just know better, but do better.</p>
+                    <div class="d-flex align-items-baseline mb-4">
+                        <span class="metric-large text-primary-blue tracking-tighter">150k+</span>
                     </div>
+                    <p class="h4 fw-bold">Professionals Impacted Across India, UK, US, and EMEA regions.</p>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <div class="bg-white text-dark p-sm-5 p-4 rounded-4 shadow-lg">
-                        <form id="contactForm" novalidate>
-                            <div class="row g-3">
-                                <div class="col-12"><input type="text" class="form-control border-0 bg-light p-3" placeholder="Full Name" required></div>
-                                <div class="col-12"><input type="email" class="form-control border-0 bg-light p-3" placeholder="Email Address" required></div>
-                                <div class="col-12"><textarea class="form-control border-0 bg-light p-3" rows="4" placeholder="How can Dr. Krishnan assist you?" required></textarea></div>
-                                <div class="col-12"><button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 fw-bold">Send Message</button></div>
-                            </div>
-                        </form>
-                        <div id="formMessage"></div>
+                    <div class="position-relative">
+                        <img src="images/profile.jpg" onerror="this.src='https://images.unsplash.com/photo-1560250056-07ba644d8ad3?auto=format&fit=crop&q=80&w=1000'" class="img-fluid rounded-4 shadow-lg float-img" alt="Dr. Krishnan">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Global Footer -->
-    <footer class="bg-black py-4 border-top border-secondary">
-        <div class="container text-center text-secondary small">
-            &copy; 2026 Dr. Krishnan Chandrasekharan. Crafted for Leadership Excellence.
+    <!-- 4. CREDIBILITY STRIP -->
+    <section class="credibility-strip">
+        <div class="container apple-container">
+            <div class="row text-center g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="credibility-item">25+ Years</div>
+                    <div class="text-muted small text-uppercase fw-bold tracking-widest">Industry Experience</div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="credibility-item">Global Reach</div>
+                    <div class="text-muted small text-uppercase fw-bold tracking-widest">India | UK | US | EMEA</div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="credibility-item">150,000+</div>
+                    <div class="text-muted small text-uppercase fw-bold tracking-widest">Professionals Impacted</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHAT MAKES IT DIFFERENT -->
+    <section class="section-padding bg-grey">
+        <div class="container apple-container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-3 fw-bold">What Makes It Different.</h2>
+                <p class="text-muted lead mx-auto mt-3" style="max-width: 700px;">Every engagement is designed for a mindset shift, guiding the journey from theory to ownership.</p>
+            </div>
+            <div class="row g-4 mt-5">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="apple-card text-center">
+                        <div class="mb-4"><i class="fas fa-comment-dots fs-1 text-primary-blue"></i></div>
+                        <h4 class="fw-bold mb-2">Communication</h4>
+                        <span class="transformation-arrow"><i class="fas fa-long-arrow-alt-down"></i></span>
+                        <h4 class="fw-bold text-primary-blue">Confidence</h4>
+                        <p class="text-muted mt-3">From sharing information to commanding boardroom presence.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="apple-card text-center">
+                        <div class="mb-4"><i class="fas fa-user-check fs-1 text-primary-blue"></i></div>
+                        <h4 class="fw-bold mb-2">Leadership</h4>
+                        <span class="transformation-arrow"><i class="fas fa-long-arrow-alt-down"></i></span>
+                        <h4 class="fw-bold text-primary-blue">Ownership</h4>
+                        <p class="text-muted mt-3">From managing tasks to taking full internal accountability.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="apple-card text-center">
+                        <div class="mb-4"><i class="fas fa-bolt fs-1 text-primary-blue"></i></div>
+                        <h4 class="fw-bold mb-2">Skills</h4>
+                        <span class="transformation-arrow"><i class="fas fa-long-arrow-alt-down"></i></span>
+                        <h4 class="fw-bold text-primary-blue">Execution</h4>
+                        <p class="text-muted mt-3">From theoretical knowledge to consistent, high-impact results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. LEARNING WITHOUT WALLS -->
+    <section class="section-padding bg-dark text-white">
+        <div class="container apple-container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7" data-aos="fade-up">
+                    <h2 class="display-3 fw-bold">Learning Without Walls.</h2>
+                    <p class="text-muted fs-4 mt-3">Reimagining human capability beyond traditional classroom constraints.</p>
+                </div>
+            </div>
+            <div class="row g-4 pt-5">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="apple-card">
+                        <div class="mb-4"><i class="fas fa-cogs fs-2"></i></div>
+                        <h4 class="fw-bold">Practical</h4>
+                        <p class="text-muted">Tools that can be applied the moment you step out of the session.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="apple-card">
+                        <div class="mb-4"><i class="fas fa-sync-alt fs-2"></i></div>
+                        <h4 class="fw-bold">Continuous</h4>
+                        <p class="text-muted">Persistent development systems that sustain behavioral change long-term.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="apple-card">
+                        <div class="mb-4"><i class="fas fa-check-double fs-2"></i></div>
+                        <h4 class="fw-bold">Outcome-driven</h4>
+                        <p class="text-muted">Focused entirely on the measurable impact of every training intervention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CASE STUDIES -->
+    <section id="gallery" class="section-padding">
+        <div class="container apple-container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <p class="text-primary-blue fw-700 tracking-widest small text-uppercase mb-3">The Impact</p>
+                <h2 class="display-3 fw-bold">Case Studies.</h2>
+            </div>
+            <div class="row g-4 mt-5">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="apple-card">
+                        <span class="h2 fw-800 text-primary-blue mb-4 d-block">3X</span>
+                        <h5 class="fw-bold mb-4">Improvement in Sales Success</h5>
+                        <p class="small text-muted mb-3"><strong class="text-dark">PROBLEM:</strong> Stagnant conversion and communicative gaps in the EMEA sales force.</p>
+                        <p class="small text-muted mb-3"><strong class="text-dark">INTERVENTION:</strong> Behavioral agility coaching and communicative presence sessions.</p>
+                        <p class="small text-muted"><strong class="text-dark">RESULT:</strong> 300% surge in successful client acquisitions within 180 days.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="apple-card">
+                        <span class="h2 fw-800 text-primary-blue mb-4 d-block">45%</span>
+                        <h5 class="fw-bold mb-4">Retention Rate Enhancement</h5>
+                        <p class="small text-muted mb-3"><strong class="text-dark">PROBLEM:</strong> High CXO turnover and lack of leadership ownership in US branches.</p>
+                        <p class="small text-muted mb-3"><strong class="text-dark">INTERVENTION:</strong> Executive transformation and leadership ownership strategy.</p>
+                        <p class="small text-muted"><strong class="text-dark">RESULT:</strong> Significant reduction in turnover and stabilized management team.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="apple-card">
+                        <span class="h2 fw-800 text-primary-blue mb-4 d-block">80%</span>
+                        <h5 class="fw-bold mb-4">Interview Conversion Growth</h5>
+                        <p class="small text-muted mb-3"><strong class="text-dark">PROBLEM:</strong> Qualified candidates failing at executive interview levels.</p>
+                        <p class="small text-muted mb-3"><strong class="text-dark">INTERVENTION:</strong> High-impact communication mastery and influence strategy.</p>
+                        <p class="small text-muted"><strong class="text-dark">RESULT:</strong> Dramatic increase in executive-level placement success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS -->
+    <section class="section-padding bg-grey">
+        <div class="container apple-container text-center">
+            <h2 class="display-3 fw-bold mb-5" data-aos="fade-up">Trusted by Global Leaders.</h2>
+            <div class="row g-4 mt-5">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="apple-card">
+                        <p class="fs-4 italic">"Dr. Krishnan doesn't just teach leadership; he **redefines the way you think about impact**. The shift in our team's confidence was immediate."</p>
+                        <div class="mt-5">
+                            <span class="fw-bold d-block">VP HR</span>
+                            <span class="text-muted small uppercase">Global FMCG Leader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="apple-card">
+                        <p class="fs-4 italic">"The most **outcome-driven intervention** I have experienced. Practical, intense, and deeply transformative for our EMEA operations."</p>
+                        <div class="mt-5">
+                            <span class="fw-bold d-block">Country Manager</span>
+                            <span class="text-muted small uppercase">Fortune 500 Tech Giant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FUTURE OF LEARNING -->
+    <section id="blog" class="section-padding">
+        <div class="container apple-container text-center">
+            <div data-aos="fade-up">
+                <p class="future-text fw-bold text-gradient">AI is changing how we work. <br>Mindset defines how we lead.</p>
+                <p class="text-muted mt-4 mx-auto" style="max-width: 650px;">The future of human potential lies at the intersection of technological mastery and emotional intelligence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CORE SERVICES -->
+    <section id="videos" class="section-padding bg-grey">
+        <div class="container apple-container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-3 fw-bold">Core Services.</h2>
+            </div>
+            <div class="row g-4 mt-5">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="apple-card text-center py-5">
+                        <i class="fas fa-users-cog fs-1 text-primary-blue mb-4"></i>
+                        <h4 class="fw-bold">Leadership Development</h4>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="apple-card text-center py-5">
+                        <i class="fas fa-microphone-alt fs-1 text-primary-blue mb-4"></i>
+                        <h4 class="fw-bold">Communication Mastery</h4>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="apple-card text-center py-5">
+                        <i class="fas fa-chess fs-1 text-primary-blue mb-4"></i>
+                        <h4 class="fw-bold">Executive Coaching</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. CTA SECTION -->
+    <section class="section-padding bg-dark text-white text-center">
+        <div class="container apple-container py-5">
+            <div data-aos="zoom-in">
+                <h2 class="display-3 fw-bold mb-4">If your people are not evolving, <br>your business is not growing.</h2>
+                <p class="text-muted lead mb-5">Ready to transform theoretical intent into organizational ownership?</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#contact" class="btn-apple">Schedule a Consultation</a>
+                    <a href="https://www.linkedin.com/in/drkc" target="_blank" class="btn-apple-outline text-white border-white">LinkedIn <i class="fab fa-linkedin ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. CONTACT SECTION -->
+    <section id="contact" class="section-padding">
+        <div class="container apple-container">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h2 class="display-4 fw-bold mb-4">Start the <br>Redefinition.</h2>
+                    <p class="text-muted mb-5">Available globally for executive advisory, keynote addresses, and high-impact L&D interventions.</p>
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="bg-light rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;"><i class="fas fa-location-dot text-primary-blue"></i></div>
+                            <div>
+                                <span class="d-block small text-muted uppercase fw-bold tracking-widest">LOCATION</span>
+                                <span class="fw-bold text-dark">Ind | UK | US | EMEA</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="bg-light rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;"><i class="fab fa-linkedin-in text-primary-blue"></i></div>
+                            <div>
+                                <span class="d-block small text-muted uppercase fw-bold tracking-widest">LINKEDIN</span>
+                                <a href="https://www.linkedin.com/in/drkc" target="_blank" class="fw-bold text-dark text-decoration-none">/in/drkc</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="apple-card shadow-sm p-sm-5 p-4 border">
+                        <form id="contactForm">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h4 class="fw-bold mb-0">Direct Message</h4>
+                                <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-2 small fw-bold"><i class="fab fa-whatsapp me-1"></i> WhatsApp Inquiry</span>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="small fw-700 text-muted uppercase mb-1">Full Name</label>
+                                    <input type="text" id="formName" class="form-control border-0 bg-light p-3" placeholder="Enter your name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="small fw-700 text-muted uppercase mb-1">Email</label>
+                                    <input type="email" id="formEmail" class="form-control border-0 bg-light p-3" placeholder="name@company.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="small fw-700 text-muted uppercase mb-1">Enquiry</label>
+                                    <textarea id="formMessageText" class="form-control border-0 bg-light p-3" rows="4" placeholder="How can Dr. Krishnan assist you?" required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-apple w-100 py-3 text-uppercase tracking-widest fw-bold">Send Enquiry</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. FOOTER -->
+    <footer class="py-5 border-top bg-light">
+        <div class="container apple-container text-center">
+            <div class="mb-5">
+                <a class="navbar-brand fw-bold text-dark fs-4" href="#home" style="font-family: 'Outfit';">
+                    DR. KRISHNAN <span style="font-weight: 500; opacity: 0.8;">CHANDRASEKHARAN</span>
+                </a>
+            </div>
+            <div class="d-flex justify-content-center gap-5 mb-5 opacity-75">
+                <a href="#home" class="text-dark text-decoration-none small fw-bold">HOME</a>
+                <a href="#about" class="text-dark text-decoration-none small fw-bold">TRANSFORMATION</a>
+                <a href="#videos" class="text-dark text-decoration-none small fw-bold">SERVICES</a>
+                <a href="https://www.linkedin.com/in/drkc" target="_blank" class="text-dark text-decoration-none small fw-bold">LINKEDIN</a>
+            </div>
+            <p class="text-muted small">&copy; 2026 Dr. Krishnan Chandrasekharan. All rights reserved. <br>Designed for Storytelling & Impact.</p>
         </div>
     </footer>
 
-    <!-- Scripts Hub -->
+    <!-- Floating Elements -->
+    <a href="https://wa.me/916374316870" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
